@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://idealplan.co.kr/sitemap.xml
