@@ -140,6 +140,15 @@ summary::after{content:"+";position:absolute;right:4px;top:18px;font-family:var(
 details[open] summary::after{content:"−"}
 details p{padding:0 0 22px;font-size:15px;max-width:720px}
 
+/* guide */
+.guide-list{list-style:none;margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.guide-list a{display:block;border:1px solid var(--line);padding:22px;height:100%;background:#fff;transition:border-color .2s}
+.guide-list a:hover{border-color:var(--ink)}
+.guide-list b{display:block;color:var(--ink);font-size:16px;line-height:1.45;margin-bottom:6px}
+.guide-list span{font-size:14px;color:var(--muted);line-height:1.6}
+.guide-more{display:inline-block;margin-top:26px;font-weight:700;color:var(--ink);border-bottom:1px solid var(--ink)}
+@media(max-width:860px){.guide-list{grid-template-columns:1fr}}
+
 /* contact */
 .final{text-align:center}
 .final .tel-big{display:inline-block;font-family:var(--en);font-size:clamp(36px,6vw,60px);font-weight:800;letter-spacing:-.02em;color:var(--ink);margin:6px 0 28px}
@@ -198,6 +207,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid #4a90e2;outline-offset:2
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "LocalBusiness", "@id": "https://idealplan.co.kr/toilet/#business", "name": "이상기획", "alternateName": ["이상기획 이동식 화장실", "IDEALPLAN"], "description": "이동식 화장실 대여·판매 전문. 축제·공연·체육대회·공사현장 대여부터 캠핑장·공원·관광지·농장 상설용 구매까지, 판넬형 1조부터 대형 모바일·컨테이너형·장애인용까지 전국 운송·설치·철거.", "url": "https://idealplan.co.kr/toilet/", "telephone": "+82-10-7292-0086", "email": "mshb0816@naver.com", "image": "https://idealplan.co.kr/toilet/img/real-exterior.jpg", "areaServed": {"@type": "Country", "name": "대한민국"}, "founder": {"@type": "Person", "name": "이상훈"}, "taxID": "841-25-01188", "sameAs": ["https://pf.kakao.com/_pEmvX"], "knowsAbout": ["이동식 화장실", "모바일 화장실", "행사 화장실", "임시 화장실", "공사현장 화장실", "판넬 화장실", "컨테이너 화장실", "장애인 화장실"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "이동식 화장실 대여·판매", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "대형 모바일 화장실 대여·판매", "description": "남녀 분리, 남 좌변기 2·소변기 4·세면대 1 / 여 좌변기 5·세면대 1, 약 2,700×6,800×2,900mm. 수천 명 규모 축제·공연용", "areaServed": "대한민국"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "중소형 모바일 화장실 대여·판매", "description": "남 좌변기 2·소변기 3·세면대 1 / 여 좌변기 3·세면대 1, 약 2,700×4,800~5,000×2,900mm. 중규모 행사·기업 행사용", "areaServed": "대한민국"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "판넬형 화장실(1~3조) 대여·판매", "description": "1조 좌변기 1 / 3조 좌변기 2·소변기 1, 원목·스틸 외장. 소규모 행사·공사현장용", "areaServed": "대한민국"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "컨테이너형 화장실 대여·판매", "description": "컨테이너 구조, 장기 공사현장·작업장용", "areaServed": "대한민국"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "장애인 전용 화장실 대여·판매", "description": "휠체어 진입 경사로와 넓은 내부. 공공기관·지자체 행사용", "areaServed": "대한민국"}}]}}, {"@type": "WebSite", "@id": "https://idealplan.co.kr/#website", "url": "https://idealplan.co.kr/", "name": "이상기획", "inLanguage": "ko"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "구매도 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 라인업의 모든 모델을 구매하실 수 있습니다. 외장재, 냉난방, 내부 구성 등 옵션에 따라 가격과 납품 일정이 달라지므로 상담 시 안내드립니다."}}, {"@type": "Question", "name": "주문하면 납품까지 얼마나 걸리나요?", "acceptedAnswer": {"@type": "Answer", "text": "모델과 옵션, 재고 상황에 따라 다릅니다. 필요한 시점을 알려주시면 일정에 맞출 수 있는지 먼저 확인해 드립니다."}}, {"@type": "Question", "name": "몇 칸이 필요한지 모르겠어요.", "acceptedAnswer": {"@type": "Answer", "text": "예상 인원, 행사 시간, 음식·음료 판매 여부에 따라 필요한 칸 수가 달라집니다. 행사 개요만 알려주시면 적정 수량을 계산해 제안해 드립니다."}}, {"@type": "Question", "name": "상하수도나 전기 연결이 꼭 필요한가요?", "acceptedAnswer": {"@type": "Answer", "text": "모델마다 다릅니다. 자체 수조를 갖춘 모델은 상하수도 연결 없이 사용할 수 있고, 조명·냉난방 등 전원이 필요한 경우 현장 전기 사용 여부를 상담 시 확인해 드립니다."}}, {"@type": "Question", "name": "설치 장소는 어떤 조건이어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "운반 차량이 진입할 수 있고 바닥이 평탄한 곳이면 됩니다. 현장 사진이나 지도 위치를 보내주시면 설치 가능 여부를 미리 확인해 드립니다."}}, {"@type": "Question", "name": "지방 행사도 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 전국 설치·수거가 가능합니다. 지역과 일정에 따라 운송비가 달라지므로 견적 시 함께 안내드립니다."}}, {"@type": "Question", "name": "행사 중 청소나 오수 처리도 해주나요?", "acceptedAnswer": {"@type": "Answer", "text": "행사 기간과 규모에 따라 별도로 협의합니다. 장기간 운영하거나 인원이 많은 행사라면 미리 말씀해 주세요."}}, {"@type": "Question", "name": "얼마 전에 예약해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "축제·행사가 몰리는 봄·가을 성수기에는 일찍 마감될 수 있습니다. 일정이 정해지는 대로 먼저 문의해 주시는 것이 좋습니다."}}]}]}</script>
 </head>
 <body>
 
@@ -400,6 +410,23 @@ a:focus-visible,summary:focus-visible{outline:2px solid #4a90e2;outline-offset:2
   </div>
 </section>
 
+<section class="paper" id="guide">
+  <div class="wrap">
+    <div class="eyebrow">08. GUIDE</div>
+    <h2>이동식 화장실, 준비 전에 읽어보세요</h2>
+    <p class="lead">칸 수 계산부터 비용, 설치 조건, 관련 법까지 행사 담당자가 자주 묻는 내용을 정리했습니다.</p>
+    <ul class="guide-list">
+      <li><a href="guide/how-many.html"><b>행사 인원별 이동식 화장실, 몇 칸이 필요할까?</b><span>인원·행사 시간·음주 여부로 칸 수 잡는 법</span></a></li>
+      <li><a href="guide/types.html"><b>이동식 화장실 종류 비교</b><span>대형 모바일·판넬형·컨테이너형·장애인용</span></a></li>
+      <li><a href="guide/rent-vs-buy.html"><b>대여할까, 구매할까?</b><span>사용 기간과 용도로 판단하는 기준</span></a></li>
+      <li><a href="guide/cost.html"><b>대여 비용은 무엇으로 정해질까?</b><span>견적이 달라지는 7가지 요인</span></a></li>
+      <li><a href="guide/install.html"><b>설치 조건과 배치 요령</b><span>차량 진입, 바닥, 급수·전기, 동선</span></a></li>
+      <li><a href="guide/law.html"><b>행사 이동화장실 관련 법 정리</b><span>설치 명령, 남녀 변기 비율, 과태료</span></a></li>
+    </ul>
+    <a class="guide-more" href="guide/">가이드 전체 보기 →</a>
+  </div>
+</section>
+
 <section class="final">
   <div class="wrap">
     <div class="eyebrow">CONTACT</div>
@@ -418,7 +445,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid #4a90e2;outline-offset:2
   <div class="wrap">
     <p><b>상호</b> 이상기획 &nbsp;|&nbsp; <b>대표</b> 이상훈 &nbsp;|&nbsp; <b>사업자등록번호</b> 841-25-01188</p>
     <p><b>전화</b> 010-7292-0086 &nbsp;|&nbsp; <b>카카오톡 채널</b> 이상기획 &nbsp;|&nbsp; <b>이메일</b> mshb0816@naver.com</p>
-    <p class="copy">Copyright ⓒ lsplan. All rights reserved.</p>
+    <p><a href="guide/">이동식 화장실 가이드</a></p>
+    <p class="copy">Copyright ⓒ 이상기획. All rights reserved.</p>
   </div>
 </footer>
 
