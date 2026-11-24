@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://idealplan.co.kr/sitemap.xml
+#DaumWebMasterTool:e42264050480d21c95d11b577500154fb942d677506b3d9691eb394ef6f7106d:4djnnmDYbaXJEU0i2qqWPQ==
