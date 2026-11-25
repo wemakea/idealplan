@@ -63,3 +63,8 @@ footer p{margin-bottom:4px;font-size:13px}
 .dock .d-kakao{background:var(--kakao);color:#191919}
 @media(min-width:861px){.dock{display:none}body{padding-bottom:0}}
 @media(max-width:600px){.cards{grid-template-columns:1fr}.btn{flex:1 1 100%}.top-tel{font-size:14px}}
+footer .biz-more{border:0;margin:6px 0 2px}
+footer .biz-more summary{display:inline-block;padding:0;font-size:12px;font-weight:600;font-family:var(--en);color:#8a8a8a;letter-spacing:.04em}
+footer .biz-more summary::after{content:none}
+footer .biz-more[open] summary{color:#d6d6d6}
+footer .biz-more p{padding:4px 0 0;font-size:13px}
