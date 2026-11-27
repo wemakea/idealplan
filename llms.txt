@@ -24,3 +24,6 @@
 - [대여 비용을 정하는 요인](https://idealplan.co.kr/toilet/guide/cost.html)
 - [설치 조건과 배치 요령](https://idealplan.co.kr/toilet/guide/install.html)
 - [행사 이동화장실 관련 법 정리](https://idealplan.co.kr/toilet/guide/law.html)
+
+## 블로그
+- [이상기획 이동식 화장실 블로그](https://idealplan.tistory.com/): 행사·현장별 이동식 화장실 준비 정보
