@@ -470,20 +470,15 @@ a:focus-visible,summary:focus-visible{outline:2px solid #4a90e2;outline-offset:2
     <a class="ch-add js-chadd" href="https://pf.kakao.com/_pEmvX/friend" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .9.1 1.3.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카카오톡 채널 추가하고 소식 받기</a>
 
     <div class="qform-wrap" id="quote">
-      <h3>온라인 견적 요청</h3>
-      <p class="qform-lead">전화·문자가 어려우시면 아래 내용을 남겨주세요. 확인 후 연락드립니다.</p>
+      <h3>연락처 남기기</h3>
+      <p class="qform-lead">연락처만 남기셔도 됩니다. 확인 후 바로 연락드립니다.</p>
       <form class="qform" id="qform" novalidate>
-        <label>성함 / 회사명<input name="이름" autocomplete="name" placeholder="홍길동 / OO축제 사무국"></label>
         <label>연락처 *<input name="연락처" required type="tel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000"></label>
-        <label>대여 / 구매<select name="대여구매"><option>대여</option><option>구매</option><option>아직 모름</option></select></label>
-        <label>일정<input name="일정" placeholder="예: 5월 3일~5일 행사 / 6월 납품"></label>
-        <label>장소<input name="장소" placeholder="시·군·구까지만 적어도 됩니다"></label>
-        <label>예상 인원<input name="인원" inputmode="numeric" placeholder="하루 최대 이용자 수"></label>
-        <label class="full">원하는 모델 · 수량<input name="모델수량" placeholder="모르면 비워두세요. 추천해 드립니다"></label>
-        <label class="full">기타 요청<textarea name="요청사항" rows="3" placeholder="장애인용 필요, 행사 중 관리 등"></textarea></label>
+        <label>성함 (선택)<input name="이름" autocomplete="name" placeholder="홍길동"></label>
+        <label class="full">문의 내용<textarea name="문의내용" rows="4" placeholder="예) 5월 3일 부산 축제, 하루 2천 명, 대여 문의드립니다&#10;아는 것만 적어주세요. 나머지는 전화로 여쭤보겠습니다."></textarea></label>
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
-        <label class="agree full"><input type="checkbox" name="개인정보동의" value="동의" required> 개인정보 수집·이용에 동의합니다. <small>(수집 항목: 성함·연락처·문의 내용 / 목적: 견적 상담 / 보유: 상담 완료 후 1년)</small></label>
-        <button class="btn btn-call full" type="submit">견적 요청 보내기</button>
+        <label class="agree full"><input type="checkbox" name="개인정보동의" value="동의" required> 개인정보 수집·이용 동의 <small>(연락처·성함·문의 내용, 견적 상담용, 상담 후 1년 보관)</small></label>
+        <button class="btn btn-call full" type="submit">연락 요청하기</button>
       </form>
     </div>
   </div>
@@ -559,7 +554,7 @@ var CONFIG = {
     fetch(CONFIG.formEndpoint, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify(data)})
       .then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ if (!r.ok || j.success === "false" || j.success === false) throw new Error(j.message || r.status); }); })
       .then(function(){ track("form"); qf.reset(); showToast("견적 요청이 접수됐습니다. 곧 연락드리겠습니다."); btn.textContent = "접수 완료"; })
-      .catch(function(){ showToast("전송에 실패했습니다. 전화(010-7292-0086)나 문자로 문의해 주세요."); btn.disabled = false; btn.textContent = "견적 요청 보내기"; });
+      .catch(function(){ showToast("전송에 실패했습니다. 전화(010-7292-0086)나 문자로 문의해 주세요."); btn.disabled = false; btn.textContent = "연락 요청하기"; });
   });
   /* 스크롤하면 상단바 배경 채우기 */
   var top = document.getElementById("top");
